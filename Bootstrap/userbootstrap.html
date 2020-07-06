@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Registro User Bootstrap</title>  
+  	</head>
+  	<body style="background-color: #DAEBF7">
+     	<header style="height: 1.7em"></header> 
+    	<div style="height: 0.2em;"></div>
+    	<div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card shadow-lg p-3 mb-5" style="background-color: #F7F7F7">
+        		  <div class="card-header display-4 font-weight-light text-dark text-center">Formulario de registro</div>
+        			<div class="card-body">
+        				<form id="form1">
+                  <div class="form-row">
+                  	<div class="col">
+                  		<label for="id_usr" class="control-label"> ID Usuario </label>
+        							<input type="text" class="form-control" id="id_usr" maxlength="11" placeholder="ID del usuario">
+                  	</div>
+                  	<div class="col">
+                      <form>
+        					 			<label class="control-label"> ID País </label>
+        								<select class="form-control">
+          								<option value="seleccion">Seleccione el ID del País</option>
+          								<option value="uno">123</option>
+          								<option value="dos">456</option>
+          								<option value="tre">789</option>
+        								</select>
+        							</form>
+                  	</div>
+                	</div>
+                	
+                  <div class="form-row">
+                    <div class="col">
+                    	<label for="nombre" class="control-label"> Nombre </label>
+        							<input type="text" class="form-control" id="nombre" name="" maxlength="25" placeholder="Nombre">   
+                    </div>
+                    <div class="col">
+                      <label for="apellido" class="control-label">Apellidos </label>
+        							<input type="text" class="form-control" id="apellido" name="" maxlength="25" placeholder="Apellidos"> 
+                    </div>
+                	</div>
+                  					
+                  <div class="form-row">
+                    <div class="col">
+                      <label for="direccion" class="control-label"> Dirección </label>
+                      <input type="text" class="form-control" id="direccion" maxlength="45" placeholder="Dirección"> 
+                    </div>
+                  </div>
+                  
+                  <div class="form-row">
+                  	<div class="col">
+        							<label for="ccusuario" class="control-label"> Cédula </label>
+        							<input type="text" class="form-control" id="ccusuario" name="" maxlength="20" placeholder="Cédula">
+      							</div>
+      							<div class="col">
+        							<label for="telefono" class="control-label"> Teléfono </label>
+        							<input type="text" class="form-control" id="telefono" name="" maxlength="20" placeholder="Teléfono">
+      							</div>
+                  </div>
+                  
+                  <div class="form-row">
+                  	<div class="col">
+        							<label for="email" class="control-label"> Correo electrónico </label>
+        							<input type="text" class="form-control" id="email" name="" maxlength="120" placeholder="Correo electrónico">
+      							</div>
+      							<div class="col">
+        							<label for="ccpaswd" class="control-label">Contraseña </label>
+        							<input type="password" class="form-control" id="ccpaswd" placeholder="Contraseña">
+      							</div>
+                  </div>
+                </form>
+                <br>
+                <div class="text-center">
+                  <button class="btn btn-info" type="submit">Enviar</button>
+                </div>
+        			</div>
+        		</div>   
+    			</div>
+        </div>       
+      </div>
+                        
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
