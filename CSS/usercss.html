@@ -8,26 +8,24 @@
 <body>
 	<div class="contenedor">
 		<section class="Formulario">
-			<h4>Formulario de registro</h4>
-			<input type="text" id="id_usr" maxlength="11" placeholder="ID del usuario">
-        		<select>
-        			<option value="1">Seleccione el ID del País</option>
-          			<option value="2">123</option>
-          			<option value="3">456</option>
-          			<option value="4">789</option>
+			<h4>Formulario de registro - Usuario</h4>
+			<input type="number" id="id_usr" max="99999999999" placeholder="ID del usuario">
+        		<select id="id_pais">
+        			<option value="1">Seleccione el País</option>
+				<option value="2">Colombia</option>
+				<option value="3">Venezuela</option>
+				<option value="4">Argentina</option>
         		</select>
         		<input type="text" id="nombre" maxlength="25" placeholder="Nombre">
         		<input type="text" id="apellido" maxlength="25" placeholder="Apellidos">
         		<input type="text"  id="direccion" maxlength="45" placeholder="Dirección">
-        		<input type="text" id="ccusuario" maxlength="20" placeholder="Cédula">
+        		<input type="text" id="ccusuario" maxlength="20" placeholder="Número de Cédula">
 			<input type="text" id="telefono" maxlength="20" placeholder="Teléfono">
-		</section>
-
-		<section class="Formulario">
-			<input type="text" id="email" maxlength="120" placeholder="Correo electrónico">
+			<input type="email" id="email" maxlength="120" placeholder="Correo electrónico">
 			<input type="password" id="ccpaswd" placeholder="Contraseña">
 			<input class="boton" type="submit" value="Registrar">
 		</section>
 	</div>
 </body>
 </html>
+
