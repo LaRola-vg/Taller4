@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Registro Car CSS</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="contenedor">
-	<section class="Formulario">
-		<h4>Formulario de registro</h4>
-		<input type="number" name="id-coche" placeholder="Id del vehiculo" max="99999999999">
-		<label>Seleccione el tipo de combustible</label>
-		<select name="id-movidoa">
-			<option value="1">Gasolina</option>
-			<option value="2">Diesel</option>
-			<option value="3">Diesel PLUS</option>
-		</select>
-		<label>Seleccione el tipo de vehiculo</label>
-		<select name="id-tipocoche">
-			<option value="1">Convertible</option>
-			<option value="2">Camioneta</option>
-			<option value="3">Autobus</option>
-		</select>
-		<label>Seleccione el estado del vehiculo</label>
-		<select name="id-estado">
-			<option value="1">Excelente</option>
-			<option value="2">Normal</option>
-			<option value="3">Malo</option>
-		</select>
-		<label>Seleccione la marca del vehiculo</label>
-		<select name="id-marca">
-			<option value="1">Renault</option>
-			<option value="2">Chevrolet</option>
-			<option value="3">Ford</option>
-		</select>
-		<input type="number" name="id_usr" placeholder="Id del usuario" max="99999999999">
-		<input type="text" name="modelo" maxlength="60" placeholder="Descripcion del modelo">
+	<head>
+		<meta charset="utf-8">
+		<title>Registro Car CSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="contenedor">
+			<section class="Formulario">
+				<h4>Formulario de registro - Vehículo</h4>
+				<input type="number" name="id_coche" placeholder="ID del vehículo" max="99999999999">
+				<label for="id_movidoa">Seleccione el tipo de combustible</label>
+				<select id="id_movidoa">
+					<option value="1">Gasolina</option>
+					<option value="2">Diesel</option>
+					<option value="3">Diesel PLUS</option>
+				</select>
+				<label for="id_tipocoche">Seleccione el tipo de vehículo</label>
+				<select id="id_tipocoche">
+					<option value="1">Convertible</option>
+					<option value="2">Camioneta</option>
+					<option value="3">Autobus</option>
+				</select>
+				<label for="id_estado">Seleccione el estado del vehiculo</label>
+				<select id="id_estado">
+					<option value="1">Excelente</option>
+					<option value="2">Normal</option>
+					<option value="3">Malo</option>
+				</select>
+				<label for="id_marca">Seleccione la marca del vehiculo</label>
+				<select id="id_marca">
+					<option value="1">Renault</option>
+					<option value="2">Chevrolet</option>
+					<option value="3">Ford</option>
+				</select>
+				<input type="number" id="id_usr" placeholder="ID del usuario" max="99999999999">
+				<input type="text" id="modelo" maxlength="60" placeholder="Descripción del modelo">
 			</section>
-	<section class="Formulario">
-		<input type="text" name="anio" maxlength="4" placeholder="Año">
-		<input type="text" name="detalle" placeholder="Detalles">
-		<input type="number" step="1" name="caja" placeholder="Valor caja">
-		<input type="number" name="motor" placeholder="Motor" step="0.01" max="99.99">
-		<label>Fecha Publicacion:</label>
-		<input type="date" name="fechapub" maxlength="10" placeholder="Fecha">
-		<input type="number" name="precio" step="0.01" max="999999.99" placeholder="Precio de venta">
-		<label>Seleccione la moneda correspondiente</label>
-		<select>
-			<option value="1">Dolares</option>
-			<option value="2">Euros</option>
-			<option value="3">Pesos</option>
-		</select>
-		<input type="text" name="pic01" maxlength="85" placeholder="Descripcion del vehiculo">
-		<input class="boton" type="submit" value="Registrar">
-	</section>
-	</div>
-</body>
+			<section class="Formulario">
+				<input type="text" id="anio" maxlength="4" placeholder="Año">
+				<input type="text" id="detalle" placeholder="Detalles">
+				<input type="number" step="1" id="caja" placeholder="Valor caja">
+				<input type="number" id="motor" placeholder="Motor" step="0.01" max="99.99">
+				<label for="fechapub">Fecha Publicación</label>
+				<input type="date" id="fechapub" maxlength="10" placeholder="Fecha">
+				<input type="number" id="precio" step="0.01" max="999999.99" placeholder="Precio de venta">
+				<label for="moneda">Seleccione la moneda correspondiente</label>
+				<select id="moneda">
+					<option value="1">Dólares</option>
+					<option value="2">Euros</option>
+					<option value="3">Pesos</option>
+				</select>
+				<input type="text" name="cc_pic01" maxlength="85" placeholder="Descripcion del vehículo">
+				<input class="boton" type="submit" value="Registrar">
+			</section>
+		</div>
+	</body>
 </html>
