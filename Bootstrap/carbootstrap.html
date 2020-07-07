@@ -9,136 +9,142 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 
     <title>Registro Car Bootstrap</title>
-    </head>
-    <body style="background-color: #DAEBF7">
-      <header style="height: 1.7em"></header> 
-      <div style="height: 0.2em;"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card shadow-lg p-3 mb-5" style="background-color: #F7F7F7">
-              <div class="card-header display-4 font-weight-light text-dark text-center">Formulario de registro</div>
-              <div class="card-body">
-                <form id="form1">
-                  <div class="form-row">
-                    <div class="col">
-                      <label for="id_coche" class="control-label"> ID Auto </label>
-                      <input type="text" class="form-control" id="id_coche" maxlength="11" placeholder="ID del auto">
-                    </div>
-                    <div class="col">
-                      <form>
-                        <label for="id_movidoa" class="control-label"> ID Marca </label>
-                        <select id="id_movidoa" class="form-control">
-                          <option>Seleccione el ID de la Marca</option>
-                          <option>001</option>
-                          <option>002</option>
-                          <option>003</option>
-                        </select>
-                      </form>
-                    </div>
-                    <div class="col">
-                      <form>
-                        <label for="id_tipocoche" class="control-label"> ID Tipo Coche </label>
-                        <select id="id_tipocoche" class="form-control">
-                          <option>Seleccione el ID del tipo de Coche</option>
-                          <option>011</option>
-                          <option>012</option>
-                          <option>013</option>
-                        </select>
-                      </form>
-                    </div>
+  </head>
+  <body style="background-color: #DAEBF7">
+    <header style="height: 1.7em"></header> 
+    <div style="height: 0.2em;"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card shadow-lg p-3 mb-5" style="background-color: #F7F7F7">
+            <div class="card-header display-4 font-weight-light text-dark text-center">Formulario de registro - Vehículo</div>
+            <div class="card-body">
+              <form id="form1">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="id_coche" class="control-label"> ID Vehículo </label>
+                    <input type="number" class="form-control" id="id_coche" max="99999999999" placeholder="ID del vehículo">
                   </div>
-
-                  <div class="form-row">
-                    <div class="col">
-                      <form>
-                        <label for="id_estado" class="control-label"> ID Estado </label>
-                        <select id="id_estado" class="form-control">
-                          <option>Seleccione el ID del Estado</option>
-                          <option>010</option>
-                          <option>020</option>
-                          <option>030</option>
-                        </select>
-                      </form>
-                    </div>
-                    <div class="col">
-                      <form>
-                        <label id="id_marca" class="control-label"> ID Combustible </label>
-                        <select id="id_marca" class="form-control">
-                          <option>Seleccione el ID del Combustible</option>
-                          <option>110</option>
-                          <option>120</option>
-                          <option>130</option>
-                        </select>
-                      </form>
-                    </div>
-                    <div class="col">
-                      <form>
-                        <label for="id_usr" class="control-label"> ID Usuario </label>
-                        <select id="id_usr" class="form-control">
-                          <option>Seleccione el ID del Usuario</option>
-                          <option>54751254874</option>
-                          <option>15269895624</option>
-                          <option>95624632546</option>
-                        </select>
-                      </form>
-                    </div>
+                  <div class="col">
+                    <form>
+                      <label for="id_marca" class="control-label"> Marca </label>
+                      <select id="id_marca" class="form-control">
+                        <option value="1">Seleccione la Marca</option>
+                        <option value="2">Renault</option>
+                        <option value="3">Chevrolet</option>
+                        <option value="4">Ford</option>
+                      </select>
+                    </form>
                   </div>
-
-                  <div class="form-row">
-                    <div class="col">
-                      <label for="modelo" class="control-label"> Modelo </label>
-                      <input type="text" class="form-control" id="modelo" name="" maxlength="60" placeholder="Modelo del auto">
-                    </div>
-                    <div class="col">
-                      <label for="motor" class="control-label"> Motor </label>
-                      <input type="text" class="form-control" id="motor" placeholder="Motor">
-                    </div>
-                    <div class="col">
-                      <label for="anio" class="control-label"> Año </label>
-                      <input type="text" class="form-control" id="anio" name="" maxlength="4" placeholder="Año">
-                    </div>
-                    <div class="col">
-                      <label for="fechapub" class="control-label"> Fecha </label>
-                      <input type="text" class="form-control" id="fechapub" name="" placeholder="Fecha">
-                    </div>
+                  <div class="col">
+                    <form>
+                      <label for="id_tipocoche" class="control-label"> Tipo de Coche </label>
+                      <select id="id_tipocoche" class="form-control">
+                        <option value="1">Seleccione el Tipo de Coche</option>
+                        <option value="2">Convertible</option>
+                        <option value="3">Camioneta</option>
+                        <option value="4">Autobus</option>
+                      </select>
+                    </form>
                   </div>
-
-                  <div class="form-row">
-                    <div class="col">
-                      <label for="detalle"> Detalles </label>
-                      <textarea class="form-control" id="detalle" rows="1" placeholder="Detalles"></textarea>
-                    </div>
-                    <div class="col">
-                      <label for="cc_pic"> Descripción </label>
-                      <textarea class="form-control" id="cc_pic" rows="1" maxlength="85" placeholder="Descripción del auto"></textarea>
-                    </div>
-                  </div>
-
-                  <div class="form-row">
-                    <div class="col">
-                      <label for="moneda" class="control-label">Moneda</label>
-                      <input type="text" class="form-control" id="moneda" name="" maxlength="3" placeholder="Moneda">
-                    </div>
-                    <div class="col">
-                      <label for="precio" class="control-label">Precio</label>
-                      <input type="text" class="form-control" id="precio" placeholder="Precio de venta">
-                    </div>
-                    <div class="col">
-                      <label for="caja" class="control-label">Caja</label>
-                      <input type="number" class="form-control" id="caja" placeholder="Valor caja">
-                    </div>
-                  </div>
-                </form>
-                <br>
-                <div class="text-center">
-                  <button class="btn btn-info" type="submit">Enviar</button> 
                 </div>
+                <div class="form-row">
+                  <div class="col">
+                    <form>
+                      <label for="id_estado" class="control-label"> Estado </label>
+                      <select id="id_estado" class="form-control">
+                        <option value="1">Seleccione el Estado</option>
+                        <option value="2">Excelente</option>
+                        <option value="3">Normal</option>
+                        <option value="4">Malo</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="col">
+                    <form>
+                      <label id="id_movidoa" class="control-label"> Combustible </label>
+                        <select name="id_movidoa" class="form-control">
+                          <option value="1">Seleccione el Combustible</option>
+                          <option value="2">Gasolina</option>
+                          <option value="3">Diesel</option>
+                          <option value="4">Diesel PLUS</option>
+                        </select>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="col">
+                      <label for="id_usr" class="control-label"> ID Usuario </label>
+                      <input type="number" id="id_usr" class="form-control" max="99999999999" placeholder="ID del usuario">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="modelo" class="control-label"> Modelo </label>
+                    <input type="text" class="form-control" id="modelo" maxlength="60" placeholder="Descripción del modelo">
+                  </div>
+                  <div class="col">
+                    <label for="motor" class="control-label"> Motor </label>
+                    <input type="text" class="form-control" id="motor" step="0.01" max="99.99" placeholder="Motor">
+                  </div>
+                  <div class="col">
+                    <label for="anio" class="control-label"> Año </label>
+                    <input type="text" class="form-control" id="anio" maxlength="4" placeholder="Año">
+                  </div>
+                  <div class="col">
+                    <label for="fechapub" class="control-label"> Fecha Publicación </label>
+                    <input type="date" class="form-control" id="fechapub" placeholder="Fecha">
+                  </div>
+                  <div class="col">
+                    <label for="detalle"> Detalles </label>
+                    <textarea class="form-control" id="detalle" rows="1" placeholder="Detalles"></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="cc_pic01"> Descripción 1 </label>
+                    <textarea class="form-control" id="cc_pic01" rows="1" maxlength="85" placeholder="Descripción del auto"></textarea>
+                  </div>
+                  <div class="col">
+                    <label for="cc_pic02"> Descripción 2 </label>
+                    <textarea class="form-control" id="cc_pic02" rows="1" maxlength="85" placeholder="Descripción del auto"></textarea>
+                  </div>
+                  <div class="col">
+                    <label for="cc_pic03"> Descripción 3 </label>
+                    <textarea class="form-control" id="cc_pic03" rows="1" maxlength="85" placeholder="Descripción del auto"></textarea>
+                  </div>
+                  <div>
+                    <label for="cc_destac" class="control-label">Destacado</label>
+                    <input type="text" class="form-control" id="cc_destac" maxlength="2" placeholder="Destacado">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="moneda" class="control-label">Moneda</label>
+                    <select id="moneda" class="form-control">
+                      <option value="1">Seleccione la Moneda</option>
+                      <option value="2">Dólares</option>
+                      <option value="3">Euros</option>
+                      <option value="4">Pesos</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="precio" class="control-label">Precio</label>
+                    <input type="number" class="form-control" id="precio" step="0.01" max="999999.99" placeholder="Precio de venta">
+                  </div>
+                  <div class="col">
+                    <label for="caja" class="control-label">Caja</label>
+                    <input type="number" class="form-control" id="caja" placeholder="Valor caja">
+                  </div>
+                </div>
+              </form>
+              <br>
+              <div class="text-center">
+                <button class="btn btn-info" type="submit">Enviar</button> 
               </div>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
   </body>
 </html>
